@@ -1,0 +1,223 @@
+{
+  "creator": "Yosys 0.8 (git sha1 5706e90, i686-w64-mingw32.static-g++ 5.4.0 -Os)",
+  "modules": {
+    "AND_temp": {
+      "attributes": {
+        "src": "AND_temp.v:1",
+        "top": 1
+      },
+      "ports": {
+        "in1": {
+          "direction": "input",
+          "bits": [
+            2,
+            3
+          ]
+        },
+        "in2": {
+          "direction": "input",
+          "bits": [
+            4,
+            5
+          ]
+        },
+        "out": {
+          "direction": "output",
+          "bits": [
+            6,
+            7
+          ]
+        }
+      },
+      "cells": {
+        "$and$AND_temp.v:8$1": {
+          "hide_name": 1,
+          "type": "AND2X1",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 2,
+            "B_SIGNED": 0,
+            "B_WIDTH": 2,
+            "Y_WIDTH": 2
+          },
+          "attributes": {
+            "src": "AND_temp.v:8"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [
+              2,
+              3
+            ],
+            "B": [
+              4,
+              5
+            ],
+            "Y": [
+              8,
+              9
+            ]
+          }
+        },
+        "$not$AND_temp.v:9$2": {
+          "hide_name": 1,
+          "type": "INVX1",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 2,
+            "Y_WIDTH": 2
+          },
+          "attributes": {
+            "src": "AND_temp.v:9"
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [
+              8,
+              9
+            ],
+            "Y": [
+              10,
+              11
+            ]
+          }
+        },
+        "$or$AND_temp.v:10$3": {
+          "hide_name": 1,
+          "type": "OR2X1",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 2,
+            "B_SIGNED": 0,
+            "B_WIDTH": 2,
+            "Y_WIDTH": 2
+          },
+          "attributes": {
+            "src": "AND_temp.v:10"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [
+              8,
+              9
+            ],
+            "B": [
+              10,
+              11
+            ],
+            "Y": [
+              12,
+              13
+            ]
+          }
+        },
+        "$xor$AND_temp.v:11$4": {
+          "hide_name": 1,
+          "type": "XOR2X1",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 2,
+            "B_SIGNED": 0,
+            "B_WIDTH": 2,
+            "Y_WIDTH": 2
+          },
+          "attributes": {
+            "src": "AND_temp.v:11"
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [
+              12,
+              13
+            ],
+            "B": [
+              10,
+              11
+            ],
+            "Y": [
+              6,
+              7
+            ]
+          }
+        }
+      },
+      "netnames": {
+        "in1": {
+          "hide_name": 0,
+          "bits": [
+            2,
+            3
+          ],
+          "attributes": {
+            "src": "AND_temp.v:6"
+          }
+        },
+        "in2": {
+          "hide_name": 0,
+          "bits": [
+            4,
+            5
+          ],
+          "attributes": {
+            "src": "AND_temp.v:6"
+          }
+        },
+        "out": {
+          "hide_name": 0,
+          "bits": [
+            6,
+            7
+          ],
+          "attributes": {
+            "src": "AND_temp.v:5"
+          }
+        },
+        "w1": {
+          "hide_name": 0,
+          "bits": [
+            8,
+            9
+          ],
+          "attributes": {
+            "src": "AND_temp.v:7"
+          }
+        },
+        "w2": {
+          "hide_name": 0,
+          "bits": [
+            12,
+            13
+          ],
+          "attributes": {
+            "src": "AND_temp.v:7"
+          }
+        },
+        "w3": {
+          "hide_name": 0,
+          "bits": [
+            10,
+            11
+          ],
+          "attributes": {
+            "src": "AND_temp.v:7"
+          }
+        }
+      }
+    }
+  }
+}
